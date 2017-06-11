@@ -1,0 +1,24 @@
+This is a bare-bone implementation of the ProgressSoft project (https://github.com/zer0xxx/ProgressSoft) using Amazon Web Services instead of a local MySQL server. It does not implement all of the original project's functionality, and is mostly a proof-of-concept at this point.
+
+Example output:
+
+	===========================================
+	Welcome to the AWS Java SDK!
+	===========================================
+	You have access to 3 Availability Zones.
+	You have 1 Amazon EC2 instance(s) running.
+	You have 0 Amazon SimpleDB domain(s) containing a total of 0 items.
+	You have 1 Amazon S3 bucket(s), containing 6 objects with a total size of 4795 bytes.
+	----MySQL JDBC Connection Testing -------
+	MySQL JDBC Driver Registered!
+	SUCCESS: take control of your AWS database now.
+	Successfully updated the DEALS_PER_CURRENCY table.
+	Successfully updated the DEALS_PER_CURRENCY table.
+	Executing statement: "SELECT * FROM INVALID_DEALS":
+	ID	DEAL_ID	FROM_CURRENCY	TO_CURRENCY	DEAL_TIMESTAMP	AMOUNT	FILE_ID	
+	1	25351	IRR	JPY	23-11-2018 04:06:30	12106.7500	1	
+	2	32388	MXN	TRY	20-06-2017 09:07:50	10997.8800	1	
+	3	14429	INR	SVC	17-04-2016 21:54:35	7216.7100	1	
+	...
+
+Julien
