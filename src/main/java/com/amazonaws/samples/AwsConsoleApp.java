@@ -228,6 +228,7 @@ public class AwsConsoleApp {
      * Updates the DEALS_PER_CURRENCY table with the loaded values in the given
      * table.
      * 
+     * @param conn  Connection object pointing to the appropriate MySQL database
      * @param table the name of the SQL table aggregate data from  
      * @throws SQLException @{link SQLException}
      */
